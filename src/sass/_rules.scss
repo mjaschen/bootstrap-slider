@@ -8,7 +8,7 @@
         .slider-track {
             height: calc(#{$slider-line-height} / 2);
             width: 100%;
-            margin-top: -$slider-line-height/4;
+            margin-top: calc(-1 * #{$slider-line-height} / 4);
             top: 50%;
             left: 0;
         }
@@ -88,7 +88,7 @@
         }
         .slider-tick,
         .slider-handle {
-            margin-top: -$slider-line-height/2;
+            margin-top: calc(-1 * #{$slider-line-height} / 4);
             &.triangle {
                 border-width: calc(#{$slider-line-height} / 2) 0 calc(#{$slider-line-height} / 2)
                     calc(#{$slider-line-height} / 2);
@@ -101,7 +101,7 @@
         .slider-tick-label-container {
             white-space: nowrap;
             .slider-tick-label {
-                padding-left: $slider-line-height * 0.2;
+                padding-left: calc(#{$slider-line-height} * 0.2);
             }
         }
         &.slider-rtl {
